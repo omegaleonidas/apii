@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Absensimodel;
+use App\Models\AbsensiModel;
 
 class AbsensiController extends Controller
 {

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\pegawaiModel;
+use App\Models\PegawaiModel;
 use App\guru;
 
 class ApiPegawai extends Controller

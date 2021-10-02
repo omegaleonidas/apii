@@ -165,6 +165,7 @@ class PegawaiController extends Controller
             'gender' =>  Request()->gender,
             'id_agama' =>  Request()->id_agama,
             'pendidikan' =>  Request()->pendidikan,
+            'foto'=>  $fileName,
            
         ];
         $this ->pegawaiModel->editData($id_pegawai,$data);
@@ -185,7 +186,7 @@ class PegawaiController extends Controller
             'gender' =>  Request()->gender,
             'id_agama' =>  Request()->id_agama,
             'pendidikan' =>  Request()->pendidikan,
-            'foto'=>  $fileName,
+          
          
     
         ];

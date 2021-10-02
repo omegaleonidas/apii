@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
-use App\Models\Absensimodel;
+use App\Models\AbsensiModel;
 use Dompdf\Dompdf;
 use Illuminate\Support\Facades\DB;
 

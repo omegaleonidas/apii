@@ -169,9 +169,9 @@
         
              </li>
 
-             <li  class="nav-item" class="{{request()->is('/logout1') ?  'active' : ''}}" >
+             <li  class="nav-item" class="{{request()->is('/logout') ?  'active' : ''}}" >
           
-          <a href="/logout1" class="nav-link">
+          <a href="/logout" class="nav-link">
              <i class="nav-icon fas fa-tachometer-alt"></i>
    
                logout

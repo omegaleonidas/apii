@@ -185,6 +185,7 @@ class PegawaiController extends Controller
             'gender' =>  Request()->gender,
             'id_agama' =>  Request()->id_agama,
             'pendidikan' =>  Request()->pendidikan,
+            'foto'=>  $fileName,
          
     
         ];

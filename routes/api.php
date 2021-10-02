@@ -68,10 +68,6 @@ Route::group(['middleware' => 'auth:sanctum'], function(){
 
 
 
-
-  
-
-
 //login
 Route::post('/login', [AuthController::class, 'login']);
 

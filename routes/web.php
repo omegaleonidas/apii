@@ -31,7 +31,7 @@ use App\Http\Middleware;
 //absensi
 
 
-
+//tes
 
 Route::group(['middleware'=>'Admin'],function(){
 
@@ -128,7 +128,7 @@ Route::get('/report/detail/{id_absensi}',[PrintController::class,'detailAbsensi1
 Route::get('/report',[PrintController::class,'index'])->name('print');;
 Route::get('/report/detailPDF/{id_absensi}',[PrintController::class,'printPDF']);
 Route::post('/report/tanggal/{id_absensi}',[PrintController::class,'Tanggal']);
-Route::get('/logout',[LoginController::class,'logout'])->name('logout');
+//Route::get('/logout',[LoginController::class,'logout'])->name('logout');
 
 
 
@@ -164,7 +164,7 @@ Route::get('/cuti1/delete/{id_cuti}',[CutiController1::class,'delete']);;
 
 Route::get('/report1/detailPrint/{id_absensi}',[PrintController1::class,'printHasil']);
 Route::get('/report1/detail1/{id_absensi}',[PrintController1::class,'detailAbsensi1']);
-Route::get('/report1',[PrintController1::class,'index'])->name('print');;
+Route::get('/report1',[PrintController1::class,'index'])->name('print1');;
 Route::get('/report1/detailPDF/{id_absensi}',[PrintController1::class,'printPDF']);
 Route::post('/report1/tanggal/{id_absensi}',[PrintController1::class,'Tanggal']);
 
@@ -175,6 +175,6 @@ Route::get('/logout1',[LoginController::class,'logout1'])->name('logout1');
 //cuti
 
 Route::get('/dataAbsensiUser/{{{Auth::user()->nip}}',[AbsensiController::class,'dataAbsensiUser']);
-Route::get('/home/{{{Auth::user()->nip}}', [App\Http\Controllers\HomeController::class, 'dataAbsensiUser'])->name('home');
+//Route::get('/home/{{{Auth::user()->nip}}', [App\Http\Controllers\HomeController::class, 'dataAbsensiUser'])->name('home');
     
 });

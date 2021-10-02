@@ -11,7 +11,7 @@ class absensiController1 extends Controller
     public function __construct(){
         $this->middleware('auth');
 
-        $this-> absensiModel = new absensiModel();
+        $this-> absensiModel = new AbsensiModel();
      
     }
 

@@ -13,7 +13,7 @@ class PrintController extends Controller
    
 
     public function __construct(){
-        $this-> absensiModel = new absensiModel();
+        $this-> absensiModel = new AbsensiModel();
         $this->middleware('auth');
 
     }

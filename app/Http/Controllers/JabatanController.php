@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\jabatanModel;
+use App\Models\JabatanModel;
 
 class JabatanController extends Controller
 {
     public function __construct(){
-        $this-> jabatanModel = new jabatanModel();
+        $this-> jabatanModel = new JabatanModel();
         $this->middleware('auth');
 
     }

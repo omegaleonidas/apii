@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Validator;
 class cutiController1 extends Controller
 {
     public function __construct(){
-        $this-> cutiModel = new cutiModel();
+        $this-> cutiModel = new CutiModel();
         $this->middleware('auth');
 
     }

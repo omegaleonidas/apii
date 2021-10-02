@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\pegawaiModel;
+use App\Models\PegawaiModel;
 use App\guru;
 
 class PegawaiController extends Controller
 {
     public function __construct(){
-        $this-> pegawaiModel = new pegawaiModel();
+        $this-> pegawaiModel = new PegawaiModel();
         $this->middleware('auth');
 
     }

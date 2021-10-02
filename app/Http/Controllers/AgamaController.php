@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\agamaModel;
+use App\Models\AgamaModel;
 
 class AgamaController extends Controller
 {
     public function __construct(){
-        $this-> agamaModel = new agamaModel();
+        $this-> agamaModel = new AgamaModel();
         $this->middleware('auth');
 
     }

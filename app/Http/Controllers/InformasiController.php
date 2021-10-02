@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\informasiModel;
+use App\Models\InformasiModel;
 //use DateTime;
 
 class InformasiController extends Controller
 {
     public function __construct(){
-        $this-> informasiModel = new informasiModel();
+        $this-> informasiModel = new InformasiModel();
        $this->middleware('auth');
 
     }

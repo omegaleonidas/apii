@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\models\user;
 
-class Authcontroller extends Controller
+class AuthController extends Controller
 {
     public function login(Request $request)
     {

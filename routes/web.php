@@ -128,7 +128,7 @@ Route::get('/report/detail/{id_absensi}',[PrintController::class,'detailAbsensi1
 Route::get('/report',[PrintController::class,'index'])->name('print');;
 Route::get('/report/detailPDF/{id_absensi}',[PrintController::class,'printPDF']);
 Route::post('/report/tanggal/{id_absensi}',[PrintController::class,'Tanggal']);
-//Route::get('/logout',[LoginController::class,'logout'])->name('logout');
+Route::get('/logout',[LoginController::class,'logout']);
 
 
 

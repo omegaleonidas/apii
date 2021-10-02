@@ -4,7 +4,7 @@ namespace App\Http\Controllers\controllersUser;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\models\absensimodel;
+use App\Models\Absensimodel;
 
 class absensiController1 extends Controller
 {

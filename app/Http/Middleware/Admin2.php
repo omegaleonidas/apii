@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Auth;
-class user
+class Admin2
 {
     /**
      * Handle an incoming request.
@@ -16,10 +16,9 @@ class user
      */
     public function handle(Request $request, Closure $next)
     {
-
-        if(Auth::check() && Auth::User()->level==2){
+        if(Auth::check() && Auth::User()->level==1){
             return $next($request);
         }
-         return  abort(404);
-}
+        return abort(404);
+    }
 }

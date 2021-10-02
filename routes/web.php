@@ -48,7 +48,7 @@ Route::get('/pegawai/delete/{id_pegawai}',[PegawaiController::class,'delete']);;
 //api pegawai
 Route::get('/pegawaiShow',[PegawaiController::class,'ApiPegawaiShow']);;
 Route::post('/pegawaiTambah',[PegawaiController::class,'ApiPegawaiTambah']);;
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+
 // Route::get('/',[HomeController::class,'index']);
 Route::get('/absensi',[AbsensiController::class,'index'])->name('absensi');;
 Route::get('/absensi/detail/{id_absensi}',[AbsensiController::class,'detailAbsensi']);;
@@ -143,6 +143,7 @@ Route::get('/',[HomeController::class,'index']);
 
 
 Auth::routes();
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/logout',[LoginController::class,'logout']);
 Route::group(['middleware'=>'user'],function(){
 Route::get('/absensi1',[AbsensiController1::class,'index'])->name('absensi1');
@@ -170,7 +171,7 @@ Route::post('/report1/tanggal/{id_absensi}',[PrintController1::class,'Tanggal'])
 
 //Route::get('/logout1',[LoginController::class,'logout1'])->name('logout1');
 
-     Route::get('/home', [HomeController::class, 'index'])->name('homeUser');
+   //  Route::get('/', [HomeController::class, 'index'])->name('homeUser');
 
 //cuti
 

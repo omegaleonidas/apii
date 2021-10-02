@@ -170,7 +170,7 @@ Route::post('/report1/tanggal/{id_absensi}',[PrintController1::class,'Tanggal'])
 
 Route::get('/logout1',[LoginController::class,'logout1'])->name('logout1');
 
-//     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+     Route::get('/', [HomeController::class, 'index'])->name('homeUser');
 
 //cuti
 

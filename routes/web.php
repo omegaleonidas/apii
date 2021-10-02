@@ -133,7 +133,7 @@ Route::post('/report/tanggal/{id_absensi}',[PrintController::class,'Tanggal']);
 
 
 
-Route::get('/',[HomeController::class,'index']);
+
 
 
 
@@ -144,6 +144,7 @@ Route::get('/',[HomeController::class,'index']);
 
 Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/',[HomeController::class,'index']);
 Route::get('/logout',[LoginController::class,'logout']);
 Route::group(['middleware'=>'user'],function(){
 Route::get('/absensi1',[AbsensiController1::class,'index'])->name('absensi1');

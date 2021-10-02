@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\CutiModel;
 use Illuminate\Support\Facades\Validator;
 
-class cutiController1 extends Controller
+class CutiController1 extends Controller
 {
     public function __construct(){
         $this-> cutiModel = new CutiModel();

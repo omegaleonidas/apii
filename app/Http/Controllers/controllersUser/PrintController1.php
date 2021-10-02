@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 use Dompdf\Dompdf;
 use Illuminate\Support\Facades\DB;
 
-class printController1 extends Controller
+class PrintController1 extends Controller
 {
    
 

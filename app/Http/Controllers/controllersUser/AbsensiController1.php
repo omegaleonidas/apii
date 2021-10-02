@@ -4,9 +4,9 @@ namespace App\Http\Controllers\controllersUser;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Absensimodel;
+use App\Models\AbsensiModel;
 
-class absensiController1 extends Controller
+class AbsensiController1 extends Controller
 {
     public function __construct(){
         $this->middleware('auth');

@@ -42,7 +42,7 @@ Route::group(['middleware' => 'auth:sanctum'], function(){
     Route::get('/ApiHitung/{id_pegawai}',[AbsensiController::class,'ApiHitung']);
     Route::get('/time',[AbsensiController::class,'time']);
   
-
+//tes 
 
     //cuti
     Route::post('/ApiCutiTambah',[CutiController::class,'ApiCutiTambah']);

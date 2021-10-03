@@ -32,7 +32,7 @@ class AbsensiController1 extends Controller
         $data = [
             'absensi' => $this->absensiModel->detailData($id_absensi),
         ];
-        return view ('absensiUser.v_detailabsensi1',$data);
+        return view ('absensiUser.v_detailAbsensi1',$data);
 
     }
 

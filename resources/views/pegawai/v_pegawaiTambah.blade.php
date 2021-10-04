@@ -75,7 +75,7 @@
 
 <div class="form-group">
     <label >alamat</label>
-    <input name="alamat" class="form-control @error('alamat') is-invalid @enderror"  value="{{old('alamat')}}" >
+    <input name="alamat_pegawai" class="form-control @error('alamat_pegawai') is-invalid @enderror"  value="{{old('alamat_pegawai')}}" >
     <div class="text-danger">
         @error('alamat')
             {{$message}}
@@ -106,17 +106,23 @@
 
 </div>
 
-
 <div class="form-group">
     <label >gender</label>
-    <input name="gender" class="form-control @error('gender') is-invalid @enderror"  value="{{old('gender')}}" >
-    <div class="text-danger">
-        @error('gender')
+    <select name="gender"   class="form-control  @error('gender') is-invalid @enderror" >
+    <option value="">-Pilih-</option>
+                        
+                                <option     value="laki- laki">   laki-laki </option>
+                                <option     value="perempuan">  perempuan  </option>
+                            
+                           
+            </select>
+       <div class="text-danger">
+        @error('id_agama')
             {{$message}}
         @enderror
+        </div>
 </div>
 
-</div>
 
 
 <div class="form-group">

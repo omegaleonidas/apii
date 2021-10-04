@@ -52,7 +52,7 @@
 
 <div class="form-group">
     <label >email</label>
-    <input type="date"  name="email" class="form-control @error('email') is-invalid @enderror"  value="{{old('email')}}" >
+    <input  name="email" class="form-control @error('email') is-invalid @enderror"  value="{{old('email')}}" >
     <div class="text-danger">
         @error('email')
             {{$message}}
@@ -86,7 +86,7 @@
 
 <div class="form-group">
     <label >tanggal masuk</label>
-    <input name="tgl_masuk" class="form-control @error('tgl_masuk') is-invalid @enderror"  value="{{old('tgl_masuk')}}" >
+    <input type="date"  name="tgl_masuk" class="form-control @error('tgl_masuk') is-invalid @enderror"  value="{{old('tgl_masuk')}}" >
     <div class="text-danger">
         @error('tgl_masuk')
             {{$message}}
@@ -97,7 +97,7 @@
 
 <div class="form-group">
     <label >tempat lahir</label>
-    <input name="tmp_lahir" class="form-control @error('tmp_lahir') is-invalid @enderror"  value="{{old('tmp_lahir')}}" >
+    <input type="date"  name="tmp_lahir" class="form-control @error('tmp_lahir') is-invalid @enderror"  value="{{old('tmp_lahir')}}" >
     <div class="text-danger">
         @error('tmp_lahir')
             {{$message}}

@@ -95,8 +95,8 @@
 </div>
 
 <div class="form-group">
-    <label >tempat lahir</label>
-    <input name="tmp_lahir" class="form-control @error('tmp_lahir') is-invalid @enderror"  value="{{$pegawai -> tmp_lahir}}" >
+    <label >tanggal lahir</label>
+    <input type="date" name="tmp_lahir" class="form-control @error('tmp_lahir') is-invalid @enderror"  value="{{$pegawai -> tmp_lahir}}" >
     <div class="text-danger">
         @error('tmp_lahir')
             {{$message}}

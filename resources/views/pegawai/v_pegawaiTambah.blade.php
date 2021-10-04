@@ -52,7 +52,7 @@
 
 <div class="form-group">
     <label >email</label>
-    <input name="email" class="form-control @error('email') is-invalid @enderror"  value="{{old('email')}}" >
+    <input type="date"  name="email" class="form-control @error('email') is-invalid @enderror"  value="{{old('email')}}" >
     <div class="text-danger">
         @error('email')
             {{$message}}

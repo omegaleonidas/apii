@@ -50,7 +50,7 @@
 </tr>
 
 <tr>
-<th width="100px" > tempat lahir </th>
+<th width="100px" > tanggal lahir </th>
 <th width="30pxpx" > : </th>
 <th  >  {{$pegawai-> tmp_lahir}}</th>
 </tr>

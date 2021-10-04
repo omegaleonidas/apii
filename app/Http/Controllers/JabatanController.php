@@ -76,7 +76,7 @@ class JabatanController extends Controller
     public function update($id_jabatan){
 
         Request()->validate([
-            'nama_jabatan1' => 'required|min:5|max:255',
+            'nama_jabatan' => 'required|min:5|max:255',
            
         ],[
 

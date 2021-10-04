@@ -15,7 +15,7 @@
     <label >nama _jabatan</label>
     <input name="nama_jabatan" class="form-control  @error('nama_jabatan') is-invalid @enderror" value="{{$jabatan -> nama_jabatan}}">
 <div class="text-danger">
-        @error('nama_agama')
+        @error('nama_Jabatan')
             {{$message}}
         @enderror
 </div>
